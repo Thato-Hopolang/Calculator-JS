@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculators</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="close">
-            <button id="closeApp">X</button>
+
+    <div class="calcu-grid">
+        <div class="output">
+            <div data-previous class="previous-output">123</div>
+            <div data-current class="current-input">456</div>
         </div>
-        <div class="title">
-            <h1>Calculator</h1>
-        </div>
-
-        <form>
-            <input type="text" name="display" id="display">
-
-            <div class="rows" class="row1">
-                <input type="button" value="">
-            </div>
-        </form>
-
+        <button data-all-clear class="all-clear double-space">CLR</button>
+        <button data-delete>Del</button>
+        <button data-operation>%</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>-</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="equal double-space">=</button>
     </div>
 </body>
 </html>
