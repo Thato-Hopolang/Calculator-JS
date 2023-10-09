@@ -1,33 +1,36 @@
 * , *::before, *::after {
     box-sizing: border-box;
     font-weight: normal;
+    font-family: sans-serif
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-color: violet;
+    background-color: bisque;
 }
 
-.calcu-grid {
+.calculator-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calcu-grid > button {
+.calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid grey;
+    border: 1px solid bisque;
     outline: none;
-    background-color: blueviolet;
+    background-color: seagreen;
+    color: #fff;
 }
 
-.calcu-grid > button:hover {
+.calculator-grid > button:hover {
     background-color: lightcyan;
+    color: #000;
 }
 
 .double-space {
@@ -37,6 +40,7 @@ body {
 .output {
     grid-column: 1 / -1;
     background-color: black;
+    color: #fff;
 
     display: flex;
     align-items: flex-end;
@@ -47,12 +51,12 @@ body {
     word-break: break-all;
 }
 
-.output .prevous-output {
+.output .prevous-operand {
     font-size: 2rem;
-    color: beige;
+    color: #fff;
 }
 
-.output .current-output {
+.output .current-operand {
     font-size: 2rem;
     color: #fff;
 }
